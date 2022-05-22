@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ajout élève</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+  <center>
+    <h1> Elève</h1>
+  </center>
+  <div class="form_eleve">
+  <!--Formulaires demandant toutes les informations de l'élève -->
+  <form class="informations" action="valider_eleve.php" method="post">
+
+      <label for="nom">Nom :</label>
+      <br>
+      <input type="text" name="nom"  placeholder="Nom" required>
+      <br>
+      <label for="prénom">Prénom :</label>
+      <br>
+      <input type="text" name="prénom" placeholder="Prénom" required>
+      <br>
+      <br>
+      <label for="datenaissance">Date de naissance:</label>
+      <br>
+      <input name="datenaissance" type="date" data-date="" data-date-format="DD MMMM YYYY" value="2015-08-09">
+      <br>
+      <input class="send_clear" type="submit" name="Send" value="Send">
+      <input class="send_clear" type="reset" name="clear" value="Clear">
+  </form>
+  </div>
+</body>
+
+</html>

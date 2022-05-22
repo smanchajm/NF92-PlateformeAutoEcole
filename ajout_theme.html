@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="CSS/style.css" />
+  <title>Ajout thème</title>
+</head>
+<body>
+  <center>
+    <h2>Thème</h2>
+  </center>
+  <!--Formulaire pour ajouter un thème avec une déscription-->
+  <div class="form_eleve">
+  <form class="informations" action="ajouter_theme.php" method="post">
+
+      <label for="nom">Nom :</label>
+      <br>
+      <input type="text" name="nom"  placeholder="Nom" required>
+      <br>
+      <label for="description">Description :</label>
+      <br>
+      <textarea name="description" placeholder="Entrer une brève description du thème." required></textarea>
+      <br>
+      <br>
+      <input class="send_clear" type="submit" name="Send" value="Send">
+      <input class="send_clear" type="reset" value="Clear">
+
+  </form>
+  </div>
+</body>
+</html>
